@@ -10,7 +10,6 @@ import routes from '@/routes/routes';
 
 import './utils/env';
 
-
 const { PORT, ENV } = process.env;
 
 const app = express();
@@ -34,7 +33,6 @@ app.use(
 app.use(logger);
 
 app.get('/', (_req, res) => {
-
   res.json({
     message: 'Welcome to the API!',
 
